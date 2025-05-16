@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Câu 3</title>
+  <style>
+    .item {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 10px;
+      width: 200px;
+      background-color: #e0f0ff;
+      box-sizing: border-box;
+      text-align: center;
+      display: inline-block;
+      vertical-align: top;
+    }
+    #container {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="container"></div>
+
+  <script>
+    const jobs = [
+      { viTri: "Nhân viên bán hàng", tenCT: "Công ty A", mucLuong: "7 triệu", yeuCau: "Giao tiếp tốt" },
+      { viTri: "Lập trình viên", tenCT: "Công ty B", mucLuong: "15 triệu", yeuCau: "Biết JavaScript" },
+      { viTri: "Thiết kế đồ họa", tenCT: "Công ty C", mucLuong: "10 triệu", yeuCau: "Sáng tạo" },
+      { viTri: "Marketing", tenCT: "Công ty D", mucLuong: "8 triệu", yeuCau: "Kỹ năng tốt" },
+      { viTri: "Kế toán", tenCT: "Công ty E", mucLuong: "9 triệu", yeuCau: "Cẩn thận" },
+      { viTri: "Hỗ trợ khách hàng", tenCT: "Công ty F", mucLuong: "7 triệu", yeuCau: "Tiếng Anh tốt" }
+    ];
+
+    const container = document.getElementById("container");
+
+    for(let i=0; i<jobs.length; i++){
+      let job = jobs[i];
+      container.innerHTML += `
+        <div class="item">
+          <h3>${job.viTri}</h3>
+          <p><b>Công ty:</b> ${job.tenCT}</p>
+          <p><b>Mức lương:</b> ${job.mucLuong}</p>
+          <p><b>Yêu cầu:</b> ${job.yeuCau}</p>
+        </div>
+      `;
+    }
+  </script>
+
+</body>
+</html>
