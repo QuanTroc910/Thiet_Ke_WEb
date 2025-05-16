@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Job Seek</title>
+</head>
+<body>
+
+  <header>
+    <h1>Job Seek</h1>
+    <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="18" fill="#77e7ba" />
+      <text x="20" y="26" font-size="20" text-anchor="middle" fill="#2f63ff">J</text>
+    </svg>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Trang chủ</a></li>
+      <li><a href="#">Việc làm</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>Thông tin tuyển dụng</h1>
+    <p>Chúng tôi luôn cập nhật những việc làm mới nhất.</p>
+    <p><span>Hãy tìm kiếm công việc phù hợp ngay hôm nay!</span></p>
+  </article>
+
+</body>
+</html>
